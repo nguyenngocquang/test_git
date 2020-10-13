@@ -1,0 +1,24 @@
+<fieldset style="width: 350px;margin: auto;">
+	<legend>Đọc số</legend>
+	Số cần đọc <input type="number" id="so">
+	<input type="button" value="đọc số" onclick="docSo();">
+	<h1 id="show"></h1>
+</fieldset>
+<script type="text/javascript">
+	function docSo(){
+		var so = parseInt(document.getElementById("so").value);
+		switch(so){
+			case 1:
+				document.getElementById("show").innerHTML = "Một";
+			break;
+			case 2:
+				document.getElementById("show").innerHTML = "Hai";
+			break;
+			case 3:
+				document.getElementById("show").innerHTML = "Ba";
+			break;
+			default :
+				document.getElementById("show").innerHTML ="Số này không thuộc khoảng từ 1 đến 3"
+		}
+	}
+</script>

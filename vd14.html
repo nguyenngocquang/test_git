@@ -1,0 +1,35 @@
+<fieldset style="width: 300px; margin: auto;">
+	<legend>Cộng 2 số</legend>
+	<table cellpadding="5">
+		<tr>
+			<td>Số 1</td>
+			<td><input type="number" id="so1"></td>
+		</tr>
+		<tr>
+			<td>Số 2</td>
+			<td><input type="number" id="so2"></td>
+		</tr>
+		<tr>
+			<td>Kết quả</td>
+			<td><input type="text" disabled id="ketqua"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="button" value="Thực hiện" onclick="tinhTong();"></td>
+		</tr>
+	</table>
+</fieldset>
+<script type="text/javascript">
+	function tinhTong(){
+		//lấy giá trị của thẻ html có id=so1
+		var so1=document.getElementById("so1").value;
+		//lấy giá trị của thẻ html có id=so2
+		var so2=document.getElementById("so2").value;
+		//ép sang kiểu số
+		so1=parseInt(so1);
+		so2=parseInt(so2);
+		var tong= so1+so2;
+		//xuất giá trị ra thẻ có id = kết quả
+		document.getElementById("ketqua").value=tong;
+	}
+</script>

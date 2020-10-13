@@ -1,0 +1,86 @@
+-Javascript là 1 ngôn ngữ phía client
+-Các cách để thực hiện lệnh js
+	-Dặt trong thẻ <script>code</script>
+	- đặt trong file .js và load file theo cú pháp
+	<script src="tenfile.js"></script>
+	-thực hiện bên trong thuocj tính của thẻ html(các thuộc tính bắt đầu bằng chữ on)
+-cú pháp lệnh javascript
+	- ghi chú (comment)
+			-ghi chú trên 1 dòng //
+			- gi chú trên nhieeud dong /**/
+	-document.write("text")--> xuất nội dung lên màn hình
+	-document.write("text"+biến+"text1")-->phép nối chuỗi
+	-alert("noi dung")-> hiển thị thông báo
+	-prompt("noi dung")-> nhấn ký tự bàn phím, trả về ký tự đó
+	- bien : dùng để lưu dữ liệu. biến đc định nghĩa theo quy tắc
+		- var tenbien = giatri
+		- tenbien = giatri
+			- không bao gồm ký tự đặc biêt;
+			- số ko đứng đầu
+			- tên biến ko trùng với một số từ khóa javascript
+		- các kiểu biến : songuyen, sothuc, string, boolean, object ,array...
+	- các phép toan
+			+ Công
+			- trừ
+			* nhân
+			/ chia
+			% chia lấy dư
+			++bien -> tăng trc 1 đv
+			bien++ -> tăng sau 1 đơn vị
+	- Phép so sánh : chỉ trả về true hoặc false
+		> lớn hơn
+		>= lớn hơn hoặc bằng
+		< nhỏ hơn
+		<= nhỏ hơn hoặc băng
+		== so sánh bằng
+		!= so sánh khác nhau
+	- toán tử quan hệ (kết hợp các phép so sánh)
+		&& -> toán tử và. tất cả các phép so sánh trả vè true thì kết quả cuối cugf mới tả về true
+		|| -> toán tử hoặc. chỉ cần 1 phép so sánh trả về true thì kết quả cuối cùng trả về true
+	-khối lệnh if
+		if(so sánh trả về true){
+			code ở đây
+		}else if(so sánh trả về true){
+			code ở đây
+		}else{
+			code ở đây
+		}
+	-khối lệnh switch
+		switch(giatri){
+			case giatri1:
+				code;
+			break;
+			case giatri2:
+				code;
+			break;
+			default:
+				code
+			break;
+		}
+	-vong lặp for
+		for(batdau;ketthuc;khoangtanggiam){
+		code
+		}
+	-vòng lặp white
+		white(dieu kiện kêt thúc vòng lặp){
+			code
+		}
+	-vòng lặp do white
+		do{
+			code
+		}white(điều kiện kết thúc vòng lặp)
+
+	-Hàm trong javascript
+		-Cú pháp : function tenham();
+		-Các loại hàm
+			-Hàm có giá trị trả về -> sử dụng từ khóa return
+			-Hàm có tham số truyền vào
+			-Hàm không có tham số truyền vào
+
+-thực hiện javascript bên trong thẻ html thông qua các thuộc tính
+	-onclick -> click chuột 1 lần
+	-ondbclick -> click chuột 2 lần
+
+- JavaScript tác động vào thẻ html thông qua thuộc tính id
+	-document.getElementById("id").value->lấy giá trị của thẻ html
+	-document.getElementById("id").innerHTML=giatri -> xuất giá trị ra thẻ HTML

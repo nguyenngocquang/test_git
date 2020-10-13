@@ -1,0 +1,14 @@
+<fieldset style="width: 300px; margin: auto;">
+	<input type="text" id="txt">
+	<input type="button" value="click" onclick="getText();">
+	<h1 id="show"></h1>
+	
+</fieldset>
+<script type="text/javascript">
+	function getText(){
+		//lấy giá trị của thẻ html có id = txt
+		var str = document.getElementById("txt").value;
+		//xuất giá trị ra thẻ html có id = show
+		document.getElementById("show").innerHTML=str;
+	}
+</script>

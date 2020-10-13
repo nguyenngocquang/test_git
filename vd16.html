@@ -1,0 +1,67 @@
+<fieldset style="width: 350px;margin: auto;">
+	<legend>Đọc số</legend>
+	Số cần đọc <input type="number" id="so">
+	<input type="button" value="đọc số" onclick="docSo();">
+	<h1 id="show"></h1>
+</fieldset>
+<script type="text/javascript">
+	function docSo(){
+		//lấy giá trị có id là so
+
+		var so = parseInt(document.getElementById("so").value);
+		//hàng trăm
+		var hangtram = Math.floor(so/100);
+		//hàng chục
+		var hangchuc = Math.floor((so%100)/10);
+		//hàng đoen vị
+		var hangdonvi = Math.floor((so%100)%10);
+		var str= soThanhChu(hangtram , "trăm") + " ";
+		str= str + soThanhChu(hangchuc , "mươi") + " ";
+		str= str + soThanhChu(hangdonvi , " ");
+		document.getElementById("show").innerHTML= str;
+	}
+	function soThanhChu(so,donvi){
+		var ketqua ="";
+		switch(so){
+			case 0:
+			if (donvi == "mươi") 
+				ketqua = "lẻ" + donvi;
+			else if(donvi == "")
+					ketqua = "";
+			break;
+			case 1:
+			if (donvi=="mươi") 
+					ketqua = "mười"
+			else
+			ketqua = "một" + donvi;
+			break;
+			case 2:
+			ketqua = "hai" + donvi;
+			break;
+			case 3:
+			ketqua = "ba" + donvi;
+			break;
+			case 4:
+			ketqua = "bốn" + donvi;
+			break;
+			case 5:
+			ketqua = "năm" + donvi;
+			break;
+			case 6:
+			ketqua = "sáu"+donvi;
+			break;
+			case 7:
+			ketqua = "bẩy"+donvi;
+			break;
+			case 8:
+			ketqua = "tám"+donvi;
+			break;
+			case 9:
+			ketqua = "chín"+donvi;
+			break;
+			
+		}
+		return ketqua;
+
+	}
+</script>

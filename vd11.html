@@ -1,0 +1,17 @@
+<script type="text/javascript">
+	//hàm ko có tham số truyền vào
+	function test1(){
+		document.write("<h1> Hàm không có tham số truyền vào</h1>")
+	}
+	// gọi hàm chỉ cần ghi tên hàm
+	test1();
+	//hàm có tham số truyền vào
+	function test2(thamso1,thamso2){
+		document.write("<h1>"+thamso1+"-"+thamso2"</h1>")
+	}
+	test2("hello",2019);
+	function test3(){
+		return "<h1>hello</h1>"
+	}
+	document.write(test3());
+</script>
